@@ -104,7 +104,6 @@ const Discover = () => {
             <button className="btn btn-pod">Listen</button>
           </div>
         </div>
-
         <h5 className="card-title">{title}</h5>
         {/* <p>{description}</p> */}
         {/* <p>Seasons: {seasons}</p>
