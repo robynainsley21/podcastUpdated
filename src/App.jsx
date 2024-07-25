@@ -14,7 +14,8 @@ function App() {
         <nav className="navbar py-4 fixed-top navbar-expand-lg">
           <div className="container-fluid" id="navbar">
             <a className="navbar-brand light-text" href="/index.html">
-              <img src="" alt="logo-img" loading="lazy" />
+              {/* <img src="" alt="logo-img" loading="lazy" /> */}
+              <h1 className="logo-name">Podify</h1>
             </a>
             <button
               className="navbar-toggler"
