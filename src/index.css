@@ -6,13 +6,17 @@
   padding: 0;
 }
 
+::-webkit-scrollbar{
+  display: none;
+}
+
 :root {
   font-family: "Poppins", sans-serif;
-  --bg-dark: #2B3D41;
-  --secondary: #4C5F6B;
+  --bg-dark: #2b3d41;
+  --secondary: #4c5f6b;
   --dark-gray: #515751;
   --ivory: #f5f9e9;
-  --gray-blue: #83A0A0;
+  --gray-blue: #83a0a0;
   --light-gray: #c2c1a5;
   --shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
     rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
@@ -38,46 +42,43 @@ a:hover {
   color: #535bf2;
 }
 
-body{
+body {
   font-family: "Poppins", sans-serif;
 }
 
-.btn-light{
+:is(.btn-light, .btn-pod) {
   cursor: pointer;
   border: 1px solid var(--light-gray);
   border-radius: 9px;
   background-color: inherit;
   color: var(--ivory);
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
+}
 
-  &:hover{
-    background-color: var(--color-bg2);
-    transition: all .3s ease-in-out;
-  }
+.btn-light:hover {
+  background-color: var(--color-bg2);
+  transition: all 0.3s ease-in-out;
 }
 /* GENERAL STYLING */
 
 /* NAVBAR */
-#offcanvasNavbar{
+#offcanvasNavbar {
   background-color: var(--color-bg1);
-
 }
 
-:is(.nav-link, Link[className="nav-link active"]){
+:is(.nav-link, Link[className="nav-link active"]) {
   color: var(--ivory);
 }
 /* NAVBAR */
 
-
 /* HOME PAGE */
 #home {
-  /* background-color: var(--bg-dark); */
   height: 100vh;
   width: 100vw;
   margin: 0;
 }
 
-.logo-name{
+.logo-name {
   font-family: Damion, sans-serif;
   color: var(--ivory);
 }
@@ -305,21 +306,63 @@ p {
 }
 /* HOME PAGE */
 
-
 /* DISCOVER PAGE */
+#discover {
+  background-color: var(--bg-dark);
+  color: var(--ivory);
+  padding-top: 7rem;
+}
 
+img[alt="pod-image"] {
+  width: 8rem;
+  margin: 1rem auto;
+}
+
+.pod-card {
+  width: 20rem;
+  background-color: var(--bg-dark);
+  color: var(--ivory);
+  box-shadow: var(--shadow);
+  padding: 1rem;
+}
+
+.pod-container {
+  padding: 2rem;
+}
+
+.btn-pod{
+  font-size: .85rem;
+}
+
+.btn-pod:hover {
+  background-color: var(--dark-gray);
+  border: 1px solid var(--ivory);
+}
+
+.pod-image-box{
+  display: flex;
+}
 /* DISCOVER PAGE */
-
 
 /* MEDIA QUERIES */
 /* MOBILE */
 @media screen and (max-width: 426px) {
   /* HOME PAGE */
-  .home-card {  
+  .home-card {
     width: 70%;
   }
 
   h1 {
     font-size: 2rem;
   }
+  /* HOME PAGE */
+
+  /* DISCOVER PAGE */
+  .pod-card {}
+  /* DISCOVER PAGE */
 }
+
+/* LAPTOP */
+/* @media (min-width: 769px){
+ 
+} */
