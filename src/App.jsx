@@ -38,7 +38,8 @@ function App() {
                   className="offcanvas-title light-text"
                   id="offcanvasNavbarLabel"
                 >
-                  <img src="" alt="logo-img" loading="lazy" />
+                  {/* <img src="" alt="logo-img" loading="lazy" /> */}
+                  <h1 className="logo-name">Podify</h1>
                 </h5>
                 <button
                   type="button"
